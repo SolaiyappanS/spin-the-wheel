@@ -90,3 +90,11 @@ img {
   width: auto;
   top: auto;
 }
+
+#coopergames_logo {
+  position: fixed;
+  bottom: 5%;
+  left: 3%;
+  top: auto;
+  width: 250px;
+}
