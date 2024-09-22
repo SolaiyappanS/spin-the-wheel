@@ -10,6 +10,8 @@
     />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
   </head>
   <body>
     <h1 class="header">Spin the Wheel</h1>
@@ -26,6 +28,10 @@
       <div id="final-value">
         <p>Click On The Spin Button To Start</p>
       </div>
+      <p
+        id="detail-box"
+        style="position: fixed; top: 50%; right: -50%; left: auto; bottom: auto"
+      ></p>
     </div>
 
     <img id="cooper_logo" src="img/mrcooper.svg" alt="mrcooper" />

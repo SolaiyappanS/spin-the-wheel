@@ -54,7 +54,7 @@ h1.header {
   border-radius: 50%;
   cursor: pointer;
   border: 0;
-  background-color: #ffb200;
+  background-color: #009fc7;
   color: #fff;
   text-transform: uppercase;
   font-size: 1.8em;
@@ -97,4 +97,17 @@ img {
   left: 3%;
   top: auto;
   width: 250px;
+}
+
+#detail-box {
+  width: 15vw;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  left: auto;
+  bottom: auto;
+  color: #009fc7;
+  font-size: 20px;
+  text-align: justify;
 }
