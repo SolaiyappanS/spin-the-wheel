@@ -77,6 +77,7 @@ let resultValue = 101;
 //Start spinning
 spinBtn.addEventListener("click", () => {
   spinBtn.disabled = true;
+  playSound("spinSound");
   //Empty final value
   finalValue.innerHTML = `<p>Good Luck!</p>`;
   //Generate random degrees to stop at
@@ -103,3 +104,8 @@ spinBtn.addEventListener("click", () => {
     }
   }, 10);
 });
+
+function playSound(soundName) {
+  document.getElementById(soundName).currentTime = 0;
+  document.getElementById(soundName).play();
+}
