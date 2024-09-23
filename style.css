@@ -53,8 +53,8 @@ h1.header {
   width: 26%;
   border-radius: 50%;
   cursor: pointer;
-  border: 0;
-  background-color: #009fc7;
+  border: #fff solid 3px;
+  background-color: #ff9a00;
   color: #fff;
   text-transform: uppercase;
   font-size: 1.8em;
