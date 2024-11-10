@@ -3,18 +3,24 @@ const spinBtn = document.getElementById("spin-btn");
 const finalValue = document.getElementById("final-value");
 //Object that stores values of minimum and maximum angle for a value
 const rotationValues = [
-  { minDegree: 0, maxDegree: 30, value: "+500🪙" },
-  { minDegree: 31, maxDegree: 90, value: "+1000🪙" },
-  { minDegree: 91, maxDegree: 150, value: "+500🪙" },
-  { minDegree: 151, maxDegree: 210, value: "-500🪙" },
-  { minDegree: 211, maxDegree: 270, value: "Spin Again" },
-  { minDegree: 271, maxDegree: 330, value: "-500🪙" },
-  { minDegree: 331, maxDegree: 360, value: "+500🪙" },
+  { minDegree: 0, maxDegree: 54, value: "+500" },
+  { minDegree: 55, maxDegree: 90, value: "+1000" },
+  { minDegree: 91, maxDegree: 144, value: "+500" },
+  { minDegree: 145, maxDegree: 216, value: "+100" },
+  { minDegree: 216, maxDegree: 270, value: "Spin Again" },
+  { minDegree: 271, maxDegree: 360, value: "+100" },
 ];
 //Size of each piece
-const data = [16, 16, 16, 16, 16, 16];
+const data = [10, 15, 25, 15, 20, 15];
 //background color for each piece
-var pieColors = ["#0c5", "#01c5f6", "#f55", "#009fc7", "#f55", "#01c5f6"];
+var pieColors = [
+  "#3ec050",
+  "#009fc7",
+  "#01c5f6",
+  "#009fc7",
+  "#01c5f6",
+  "#009fc7",
+];
 //Create chart
 let myChart = new Chart(wheel, {
   //Plugin for displaying text on pie chart
@@ -23,7 +29,7 @@ let myChart = new Chart(wheel, {
   type: "pie",
   data: {
     //Labels(values which are to be displayed on chart)
-    labels: ["+1000🪙", "+500🪙", "-500🪙", "Spin Again", "-500🪙", "+500🪙"],
+    labels: ["+1000", "+500", "+100", "Spin Again", "+100", "+500"],
     //Settings for dataset/pie
     datasets: [
       {
